@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div class="form">
+
+        <h1>Car Price Predictor</h1>
+        
+        <!-- Car Details Form -->
+        <form method="POST" action="/predict">
+            <label for="year">Year of Model:</label>
+            <input type="number" id="year" name="year" required pattern="\d{4}" min="1900" max="2023" title="Enter a valid 4-digit year between the current year and 2023"><br><br>
+    
+            
+            <label for="km_driven">Kilometers Driven:</label>
+            <input type="number" id="km_driven" name="km_driven" min="0" required><br><br>
+            
+            <label for="owner_type">Owner Type:</label>
+            <select id="owner_type" name="owner_type" required>
+                <option value="1">First</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option> 
+                <option value="4">Fourth & Above</option> 
+            </select><br><br>
+            
+            <label for="mileage">Mileage (km/l or km/kg):</label>
+            <input type="number" id="mileage" name="mileage" step="0.01" required min="7"><br><br>
+            
+            <label for="engine">Engine (in cc):</label>
+            <input type="number" id="engine" name="engine" required min="500"><br><br>
+    
+            <label for="power">Power (in bhp):</label>
+            <input type="number" id="power" name="power" required min="50" max="500"><br><br>
+            
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" required min="2" max="10"><br><br>
+            
+            <label for="transmission">Transmission:</label>
+            <select id="transmission" name="transmission" required>
+                <option value="0">Manual</option>
+                <option value="1">Automatic</option>
+            </select><br><br>
+            
+            <label for="fuel_type">Fuel Type:</label>
+            <select id="fuel_type" name="fuel_type" required>
+                <option value="0">Petrol</option>
+                <option value="1">Diesel</option>
+                <option value="2">CNG</option>
+                <option value="3">LPG</option>
+                <option value="4">Electric</option>
+            </select><br><br>
+            
+    
+            <input type="submit" value="Predict Price">
+        </form>
+        
+        <!-- Display Predicted Price -->
+        <div id="result">
+            {% if prediction_text %}
+            <p>{{ prediction_text }} Lakhs</p>
+            {% endif %}    
+        </div>
+    </div>
+
+</body>
+</html>

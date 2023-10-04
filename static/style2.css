@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: absolute;
+    background-image: url('carsss.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* backdrop-filter: blur(12px); */
+    /* opacity: 0.5; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    backdrop-filter: brightness(0.8);
+    color: snow;
+    font-weight: 800;
+}
+
+.form {
+    /* z-index: 50; */
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent white background for the form */
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align form items to the left */
+}
+
+.label-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add vertical spacing between input fields */
+}
+
+label {
+    width: 150px; /* Set a fixed width for the labels */
+    text-align: right; /* Align label text to the right */
+    margin-right: 10px; /* Add a small space between labels and input fields */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    flex: 1; /* Allow input fields to take up remaining space */
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for input fields */
+}
+
+input[type="submit"] {
+    align-self: flex-end; /* Align the submit button to the right */
+}
+
+/* Other styles for your form and page */
+
+input[type="submit"] {
+    background-color: steelblue; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set font size */
+}
+
+/* Add hover effect */
+input[type="submit"]:hover {
+    background-color: #60a7ef; /* Darken the background color on hover */
+}
+
+
+
+
+
