@@ -1,6 +1,6 @@
 # Car Price Prediction Project
 
-Welcome to the Car Price Prediction Project! This project utilizes machine learning algorithms, including Regression and Random Forest, to predict the prices of used cars. 
+Welcome to the Car Price Prediction Project! This project utilizes machine learning algorithms, including Regression, to predict the prices of used cars. 
 
 ## Table of Contents
 - [About](#about)
