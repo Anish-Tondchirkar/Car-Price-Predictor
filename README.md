@@ -23,13 +23,6 @@ To get started with this project, follow these steps:
 3. Train the model using your dataset or use the pre-trained model provided.
 4. Run the web application to start predicting car prices.
 
-## Usage
-
-The Car Price Prediction model is accessible through a web application. Users can input relevant details about their cars, such as the year, mileage, owner type, and more. The model will then provide an estimated price for the vehicle. 
-
-## Deployment
-
-This project is deployed on Amazon Web Services (AWS) and can be accessed at [http://ec2-13-51-237-165.eu-north-1.compute.amazonaws.com:6969](http://ec2-13-51-237-165.eu-north-1.compute.amazonaws.com:6969). 
 
 ## Contributing
 
