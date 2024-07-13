@@ -6,7 +6,6 @@ Welcome to the Car Price Prediction Project! This project utilizes machine learn
 - [About](#about)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
 
